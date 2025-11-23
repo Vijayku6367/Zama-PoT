@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Proof of Talent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧭 Private Proof of Talent</h1>
+            <p>Encrypted skill verification on Zama</p>
+        </header>
+
+        <!-- Wallet Connection -->
+        <div class="section" id="wallet-section">
+            <button id="connect-wallet" class="btn-primary">Connect Zama Wallet</button>
+            <div id="wallet-info" class="hidden">
+                <p>Connected: <span id="wallet-address"></span></p>
+            </div>
+        </div>
+
+        <!-- Quiz Interface -->
+        <div class="section" id="quiz-section">
+            <h3>🧠 Coding Challenge</h3>
+            <div id="questions">
+                <!-- Questions will be loaded here -->
+            </div>
+            <button id="submit-quiz" class="btn-primary">Submit Encrypted Answers</button>
+        </div>
+
+        <!-- Results -->
+        <div class="section hidden" id="results-section">
+            <h3>🎯 Results</h3>
+            <div id="result-status"></div>
+            <div id="badge-preview" class="hidden"></div>
+            <button id="mint-badge" class="btn-primary hidden">Mint Talent Badge</button>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="section" id="dashboard-section">
+            <h3>📊 Your Talent Passport</h3>
+            <div id="badges-list"></div>
+        </div>
+    </div>
+
+    <script src="fhe-core.js"></script>
+    <script src="contract-interact.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
