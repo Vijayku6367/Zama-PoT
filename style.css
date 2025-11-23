@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f0f23;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.section {
+    background: #1a1a2e;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #2d2d4d;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.question {
+    margin: 15px 0;
+    padding: 15px;
+    background: #252547;
+    border-radius: 8px;
+}
+
+.question h4 {
+    margin-bottom: 10px;
+    color: #a78bfa;
+}
+
+.option {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+    background: #2d2d4d;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.option.selected {
+    background: #4f46e5;
+    border: 1px solid #6366f1;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+#wallet-info {
+    padding: 10px;
+    background: #059669;
+    border-radius: 8px;
+    margin-top: 10px;
+}
